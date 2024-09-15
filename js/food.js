@@ -1,4 +1,4 @@
-let defaultCategory = 'Breakfast';
+let defaultCategory = 'Beef';
 
 const loadFood = (category) => {
     let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${category}`
@@ -31,4 +31,11 @@ const showMeals = (meals) => {
         `;
         container.appendChild(mealCard);
     });
+}
+
+
+const categoryListClickHandler = (event) => {
+    let categoryName = event.target.innerText;
+    // console.log('Clicked: ', categoryName);
+    loadFood(categoryName);
 }
