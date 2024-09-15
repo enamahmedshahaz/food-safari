@@ -1,6 +1,10 @@
 let defaultCategory = 'Beef';
 
 const loadFood = (category) => {
+
+    let loading = document.getElementById("loading");
+    loading.innerHTML = `<span class="loading loading-spinner loading-lg"></span>`;
+
     let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${category}`
     fetch(url)
         .then(res => res.json())
@@ -31,6 +35,11 @@ const showMeals = (meals) => {
         `;
         container.appendChild(mealCard);
     });
+
+    let loading = document.getElementById("loading");
+
+    loading.innerHTML = '';
+
 }
 
 
