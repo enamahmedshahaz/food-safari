@@ -16,10 +16,7 @@
 
     <!-- Navbar section -->
     <nav>
-
-
-
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-200">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -39,7 +36,7 @@
                 </div>
 
                 <div class="flex">
-                    <img class="w-16" src="./assets/icon.png" alt="icon of food safari" srcset="">
+                    <img class="w-16" src="./assets/images/icon.png" alt="icon of food safari" srcset="">
                     <a class="btn btn-ghost text-xl">Food Safari</a>
                 </div>
 
@@ -57,7 +54,7 @@
     </nav>
 
     <!-- carousel section -->
-    <section>
+    <section class="mt-20">
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
                 <img src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp" class="w-full" />
@@ -92,34 +89,34 @@
 
 
     <!-- Food Card section -->
-    <main>
+    <main class="mt-20">
         <!-- section title -->
-        <div class="my-4 flex justify-center items-center">
+        <div class="mb-10 flex justify-center items-center">
             <h3 class="font-bold text-2xl uppercase">-- Your Desired Category Food -- </h3>
         </div>
 
-        <div id="loading" class="text-center my-4">
+        <div id="loading" class="text-center mb-10">
         </div>
 
-        <div id="food-card-container" class="my-4 grid grid-cols-4 gap-4">
+        <div id="food-card-container" class="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         </div>
 
     </main>
 
     <!--User reviews section -->
-    <section>
+    <section class="mt-20">
         <!-- section title-->
-        <div class="my-4 flex justify-center items-center">
+        <div class="mb-10 flex justify-center items-center">
             <h3 class="font-bold text-2xl  uppercase">-- What our users Say --</h3>
         </div>
 
-        <div class="user-reviews flex justify-center items-center gap-4">
+        <div class="user-reviews flex flex-col md:flex-row justify-center items-center gap-4">
             <div
                 class="bg-base-200 flex flex-col justify-center items-center gap-2 p-4 border-2 border-red-200 rounded-xl">
 
                 <div class="avatar">
                     <div class="w-16 rounded-full">
-                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        <img src="./assets/images/user1.jpg" />
                     </div>
                 </div>
 
@@ -141,7 +138,7 @@
 
                 <div class="avatar">
                     <div class="w-16 rounded-full">
-                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        <img src="./assets/images/user2.png" />
                     </div>
                 </div>
 
@@ -162,7 +159,7 @@
 
                 <div class="avatar">
                     <div class="w-16 rounded-full">
-                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                        <img src="./assets/images/user3.jpg" />
                     </div>
                 </div>
 
@@ -185,13 +182,13 @@
 
     <!--FAQ section -->
 
-    <section>
+    <section class="mt-20">
         <!-- section title -->
-        <div class="my-4 flex justify-center items-center">
+        <div class="mb-10 flex justify-center items-center">
             <h3 class="font-bold text-2xl  uppercase">-- Frequently Asked Questions --</h3>
         </div>
 
-        <div class="my-4 flex flex-col gap-2">
+        <div class="mb-10 flex flex-col gap-2">
 
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
@@ -236,7 +233,7 @@
     </section>
 
     <!-- Divider before footer -->
-    <div class="flex w-full flex-col">
+    <div class="mt-20 flex w-full flex-col">
         <div class="divider"></div>
     </div>
 
