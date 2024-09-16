@@ -3,9 +3,9 @@ let previousClickedAnchor = null;
 
 window.onload = function () {
     // Select the first <a> element and set its color to red by default
-    const firstAnchor = document.querySelector('ul.menu-horizontal a');
-
+    const firstAnchor = document.querySelector('ul.category-menu-2 a');
     firstAnchor.classList = 'border-2 border-red-500';
+    
     previousClickedAnchor = firstAnchor;  // Set the first anchor as the previously clicked one
 }
 
